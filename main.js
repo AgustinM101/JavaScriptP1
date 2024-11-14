@@ -1,3 +1,4 @@
+
 /*
 console.log("hola")
 let nombre = "Nacho\n Basilio"
@@ -34,3 +35,44 @@ let altura = Number (prompt("Introduce tu altura en metro: "))
 let imc = peso / (altura * altura) 
 
 alert("Tu indice de masa corporal es de: " + imc.toFixed(2))
+
+// actividad Practica 2.4 
+
+let password = 12345; // sabiendo que solo esta compuesta de numeros 
+i=null;
+
+while (!(i===password)) {
+    let passwordIn = Number (prompt("Introduce tu contraseña: "));
+
+    if (password === passwordIn) {
+
+        i=passwordIn;
+        console.log("Contraseña exitosa");
+
+    } else {
+        i++;
+        console.log("Contraseña erronea");
+    }
+}
+
+// actividad Practica 3.5
+    let nombre = String(prompt("Introduce nombre:"));
+    let apellido = String(prompt("Introduce apellido:"));
+
+function mostrarNombreYApellido(a,b) { 
+    let edad = String(prompt("Introduce edad:"));
+    alert("El nombre ingresado es: "+a);
+    alert("El apellido ingresado es: "+b);
+    alert("La edad ingresada es: "+edad);
+}
+
+console.log(mostrarNombreYApellido);
+
+const concatenarNombreApellido = (a,b) => a+b;
+let nombreYApellido = concatenarNombreApellido(nombre,apellido);
+
+function MostrarDatos() {
+    console.log("Nombre y apellido: "+nombreYApellido);
+}
+
+console.log(MostrarDatos);
